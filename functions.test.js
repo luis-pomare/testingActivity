@@ -1,5 +1,5 @@
-const functions = requiere("./funtions.js");
+const functions = require("./functions.js");
 
 test("Read string length", () => {
-  expect(functions.stringLength("Microverse")).tobe(10);
+  expect(functions.stringLength("Microverse")).toBe(10);
 });
