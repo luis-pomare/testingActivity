@@ -1,3 +1,4 @@
+const { test } = require("@jest/globals");
 const functions = require("./functions.js");
 
 test("Read valid length 1", () => {
@@ -14,4 +15,8 @@ test("Read unvalid length 1", () => {
 
 test("Read unvalid length 2", () => {
   expect(functions.stringLength("")).toBe("Error");
+});
+
+test("Read reversed string", () => {
+  expect(functions.reverseString("Microverse")).toBe("esrevorciM");
 });

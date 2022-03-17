@@ -9,6 +9,14 @@ const functions = {
     }
     return output;
   },
+  reverseString: (string) => {
+    const length = string.length;
+    let output = "";
+    for (let i = length - 1; i >= 0; i -= 1) {
+      output += string[i];
+    }
+    return output;
+  },
 };
 
 module.exports = functions;
