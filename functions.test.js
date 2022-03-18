@@ -69,3 +69,7 @@ test("Read divided number 2", () => {
 test("Read divided number 3", () => {
   expect(functions.calculator.divide(-100, 100)).toBe(-1);
 });
+
+test("Read capitalize string", () => {
+  expect(functions.capitalize("microverse")).toBe("Microverse");
+});

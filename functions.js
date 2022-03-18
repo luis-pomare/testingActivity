@@ -31,6 +31,17 @@ const functions = {
       return num1 * num2;
     },
   },
+  capitalize: (string) => {
+    let capitalized = "";
+    for (let i = 0; i < string.length; i += 1) {
+      if (i === 0) {
+        capitalized += string[i].toUpperCase();
+      } else {
+        capitalized += string[i];
+      }
+    }
+    return capitalized;
+  },
 };
 
 module.exports = functions;
