@@ -1,8 +1,11 @@
 const { test } = require("@jest/globals");
+const { describe } = require("yargs");
 const functions = require("./functions.js");
 
-test("Read valid length 1", () => {
-  expect(functions.stringLength("Microverse")).toBe(10);
+describe("String functions", () => {
+  test("Read valid length 1", () => {
+    expect(functions.stringLength("Microverse")).toBe(10);
+  });
 });
 
 test("Read valid length 2", () => {
